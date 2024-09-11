@@ -8,7 +8,7 @@ const image=document.querySelector(".weather-img");
 
 async function Checkweather(city)
 {
-    const api_key ="829b4e2e9f42fe6b3e59d1671d6000";
+    const api_key ="";
     const url =`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}`;
     
     const weatherData=await fetch(`${url}`).then(response =>
